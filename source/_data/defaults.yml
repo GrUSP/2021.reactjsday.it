@@ -12,7 +12,7 @@ conference:
   online_location_info: "The conference is taking place virtually"
 
   # menu and general params
-  menu_buy_tickets_label: "Buy tickets"
+  menu_buy_tickets_label: "Register for free"
   buy_tickets_url: "https://reactjsday-2021.eventbrite.com"
   # additional info for microdata / schema.org
   #md_city: "Verona"
@@ -26,7 +26,7 @@ conference:
   title_pre: "Welcome to"
   title: "reactjsday Digital Edition"
   city: "online"
-  date: 2021-04-15T10:00+02:00
+  date: 2021-11-30T10:00+01:00
   # Use the next field to override the date in the hero
   hero_date_text:
   countdown_visible: true
@@ -35,7 +35,7 @@ conference:
   countdown_minutes: "minutes"
   countdown_seconds: "seconds"
   ticket_button_visible: true
-  hero_buy_tickets_label: "Buy tickets now"
+  hero_buy_tickets_label: "Register for free"
   # image credits (l'esempio è per la hero del CSS Day!)
   # hero_img_credits: "Image by Gianni Careddu - Own work, <a href='https://commons.wikimedia.org/w/index.php?curid=74821344 target='_blank' rel='noopener noreferrer'>CC BY-SA 4.0</a>"
   # "update" component. set the first parameter to true to make it appear in home page, false means hidden
@@ -47,7 +47,7 @@ conference:
   update_link_url: "https://google.com/"
   update_link_label: "link to google, just for the demo"
   # "call for papers" component. set the first parameter to true to make it appear in home page, false means hidden
-  cfp_open: true
+  cfp_open: false
   cfp_readmore_label: "Read more"
   cfp_open_label: "Submissions accepted until"
   cfp_open_title: "Call For Papers Now Open!"
@@ -57,26 +57,26 @@ conference:
   # "general information" ("what is it?") component
   geninfo_visible: true
   geninfo_title: "What is it?"
-  geninfo_description: "reactjsDay 2020 is the 9th edition of the Italian reactjs conference, for the 3rd year in a row organized by GrUSP, organizers of events like <a href='https://www.phpday.it/'>phpday</a> and <a href='https://www.jsday.it/'>jsday</a>.
+  geninfo_description: "reactjsday 2021 is the 7th edition of the Italian React conference organized by GrUSP, organizers of events like <a href='https://www.phpday.it/'>phpday</a> and <a href='https://www.jsday.it/'>jsday</a>.
   <br> <br /> The event is international and all sessions will be in English.
-  <br> The event’s goal is to allow all reactjsists to meet and share experience while having fun and networking in an enjoyable context.
+  <br> The event’s goal is to allow the developer community to meet and share experience while having fun and networking in an enjoyable context.
   <br />
-  <br> Due to the current pandemic situation, the 2021 edition is taking place online."
+  <br> The 2021 edition is taking place online and the participation is FREE (upon registration)."
   geninfo_about_label: "About"
   geninfo_coc_label: "Code of conduct"
   geninfo_scholarships_label: "Scholarships"
-  geninfo_tickets_label: "Buy tickets"
+  geninfo_tickets_label: "Register for free"
   # this is for the Newsletter block
   newsletter_title: "Stay in the loop!"
   newsletter_subtitle: "Subscribe to our newsletter"
   # fields taken from the Mail chimp default form -- set to `true` to add subscription
   newsletter_lists:
     php: false
-    javascript: false
+    javascript: true
     design: false
     devops: false
-    frontend: false
-    reactjs: true
+    frontend: true
+    ruby: false
     entrepreneurship: false
     local_events: false
     everything: false
@@ -91,18 +91,18 @@ conference:
   newsletter_disclaimer: "We use Mailchimp as our email marketing platform. By subscribing to the newsletter, you accept that your data are transmitted to Mailchimp to be processed. "
   newsletter_legal_url: "https://mailchimp.com/legal/"
   newsletter_legal_label: "Information about Mailchimp's privacy policy"
-  # "speakers" component. set the first parameter to true to make it appear in home page, false means hidden	
+  # "speakers" component. set the first parameter to true to make it appear in home page, false means hidden
   mcs_title: "MC"
   speakers_visible: false
   speakers_title: "speaker"
   # "topics" component. set the first parameter to true to make it appear in home page, false means hidden
-  topics_visible: true
+  topics_visible: false
   topics_title: "Topics and themes"
   topics_description: "We'll talk about..."
   topics:
     - "reactjs"
-    - "reactjs On Rails"
-    - "Security"
+    - ""
+    - ""
     - "Testing"
     - "Continuous Integration"
     - "API"
@@ -127,7 +127,7 @@ conference:
   vimeo_base_url: "https://vimeo.com/album/"
   vimeo_url_suffix: "/embed"
   #   (embed YouTube playlist: prendere l'ID della lista dall'URL, la parte dopo '&list=', e metterla qui sotto)
-  youtube_playlist_id: "PLWK9j6ps_unmgzGOw3cbjS8ID-b-cF1d9"
+  youtube_playlist_id: "PLWK9j6ps_unlYEzP4wEhjGlWDS1Ng4uCF"
   #   (embed Vimeo showcase: prendere l'ID dello showcase e metterla qui sotto)
   vimeo_showcase_id: "6048109"
   # Location section in home page. set the first parameter to true to make it appear in home page, false means hidden
@@ -141,15 +141,15 @@ conference:
   venue_img_credits: ""
   # Sponsors section in home page. set the first parameter to true to make it appear in home page, false means hidden
   sponsors_visible: true
-  sponsor_title_home: "Sponsors"
+  sponsor_title_home: "Thanks for your support!"
   # this is for the Community partners section in home page
   community_partners: true
   community_partners_title: "Community Partners"
   # this is for the Social links block
   social_follow: "Follow us on"
-  social_fb_url: "https://www.facebook.com/reactjsdayit/"
+  social_fb_url: "https://www.facebook.com/reactjsday/"
   social_linkedin_url: "https://www.linkedin.com/company/grusp/"
-  social_twitter_url: "https://twitter.com/reactjsdayit"
+  social_twitter_url: "https://twitter.com/reactjsday"
   social_vimeo_url: "https://vimeo.com/grusp"
   social_youtube_url: "https://www.youtube.com/c/grusp"
   social_instagram_url: "https://www.instagram.com/grusp_/"
@@ -161,12 +161,10 @@ conference:
   base_url: "reactjsday.it/"
   past_editions_pre: "Browse past editions:"
   past_editions:
-    2011: "2011"
-    2012: "2012"
-    2013: "2013"
-    2014: "2014"
     2015: "2015"
     2016: "2016"
+    2017: "2017"
+    2018: "2018"
     2019: "2019"
     2020: "2020"
   past_editions_videos_pre: "Videos from the past editions are available on "

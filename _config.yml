@@ -15,7 +15,7 @@ edition: 2021
 title: "reactjsday 2021"
 description: "reactjsday 2021, online conference"
 #   separate keywords by comma, no spaces
-keywords: conference,software conference,symfony,php,tech conference
+keywords: conference,software conference,tech conference,javascript,react
 author: GrUSP
 language: en
 timezone: 'Europe/Rome'
@@ -25,9 +25,9 @@ open_graph:
   # si può sostituire con il logo della conferenza (`img/conference-logo.png`)
   image: 'img/grusp-logo-full.png'
 twitter:
-  twitter_id: reactjsdayit
+  twitter_id: reactjsday
 fb:
-  fb_id: reactjsdayit
+  fb_id: reactjsday
 
 # Breadcrumbs
 breadcrumb:

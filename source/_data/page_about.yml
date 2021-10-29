@@ -10,13 +10,11 @@ intro:
 more:
   title: "reactjsday"
   content_1:
-    "<strong>reactjs</strong>day is the main conference in Italy that is dedicated solely to reactjs and its ecosystem.
-    <br><br  />
-    For the third year in a row, the conference is organized by GrUSP, with the support of the Italian reactjs community that you can join on <a href='http://bit.ly/join-slack-reactjs-it'>Slack.</a>"
+    "<strong>reactjs</strong>day is the main conference in Italy that is dedicated solely to reactjs and its ecosystem."
   content_2:
 past_edition:
   title: "Browse past editions of reactjsday"
-  video_url: "https://www.youtube.com/embed/videoseries?list=PLWK9j6ps_unmgzGOw3cbjS8ID-b-cF1d9"
+  video_url: "https://www.youtube.com/embed/videoseries?list=PLWK9j6ps_unlYEzP4wEhjGlWDS1Ng4uCF"
   video_caption: "Watch the videos from the past editions"
 team:
   title: "Our team"
@@ -34,7 +32,3 @@ team:
       name: "Giovanna Ferrari"
       role: "Sponsors Manager"
       pic_filename: "giovanna.jpg"
-    member_4:
-      name: "Monica Giambitto"
-      role: "Master of Ceremonies"
-      pic_filename: "monica-giambitto.jpg"
