@@ -40,4 +40,6 @@ gold:
 
 # Partner configuration
 partner_tags:
-  - reactjsday
+  - react
+  - javascript
+  - frontend
