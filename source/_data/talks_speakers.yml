@@ -1,41 +1,50 @@
 # NB impostare a `true` per generare la pagina, a `false` per NON generarla
-generate_schedule_page: true
+generate_schedule_page: false
 schedule_under_construction_title: "Schedule under construction"
 schedule_under_construction_description: "We are still defining the schedule. Please be patient"
 
 # Speakers. I mixin "&nome" servono per indicare quali speaker partecipano a ogni talk, sotto
-speaker_1: &regular_speaker
+speaker_1: &facundo
   speaker_in_speaker_lists: true
-  speaker_name: Luca Guidi
-  speaker_pic_filename: lucaguidi.png
-  speaker_role: Author of Hanami
-  speaker_bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. And however, enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  speaker_github_url: "https://github.com/jodosha"
-  speaker_twitter_url: "https://twitter.com/jodosha"
-speaker_2: &keynote_speaker
+  speaker_name: Facundo Giuliani
+  speaker_pic_filename: facundo-giuliani.png
+  speaker_role: Developer Relations Engineer @ Storyblok
+  speaker_bio: "is a Developer Relations Engineer at Storyblok. From Buenos Aires, Argentina, he has more than 15 years of experience in software development. Systems Engineer. Full Stack Developer. Auth0 Ambassador. Prisma Ambassador. Cloudinary Media Developer Expert. GitKraken Ambassador."
+  speaker_github_url: ""
+  speaker_twitter_url: "https://twitter.com/facundozurdo"
+speaker_2: &kathleen
   speaker_in_speaker_lists: true
-  speaker_name: Keynote Speaker
-  speaker_pic_filename: giulia.jpeg
-  speaker_role: "speaker role (optional)"
-  speaker_bio: "Example of a workshop host that must appear in speaker lists"
-speaker_3: &mc
+  speaker_name: Kathleen McMahon
+  speaker_pic_filename: kathleen-mcmahon.png
+  speaker_role: "Senior Design Engineer @ LaunchDarkly"
+  speaker_bio: "is a software engineer, designer, and conference speaker, who has deep industry experience that fuels her passion for making apps beautifully accessible. Currently a Senior Design Engineer at LaunchDarkly, she's also a Color Module Specification Editor for the W3C Design Tokens Community Group. In her spare time, she is the Creative Director for the CXsisters network, and the best lanterne rouge cyclocrosser you’ll ever meet."
+  speaker_twitter_url: "https://twitter.com/resource11"
+speaker_3: &kathryn
   speaker_in_speaker_lists: true
-  speaker_name: MC
-  speaker_pic_filename: giulia.jpeg
-  speaker_role: "speaker role (optional)"
-  speaker_bio: "Example of a workshop host that must appear in speaker lists"
+  speaker_name: Kathryn Grayson Nanz
+  speaker_pic_filename: kathryn-grayson-nanz.png
+  speaker_role: "Developer Advocate for KendoReact @ Progress Software"
+  speaker_bio: "is a Developer Advocate at Progress with a passion for React, UI and design, and sharing with the community. She started her career as a graphic designer and was told by her Creative Director to never let anyone find out she could code because she’d be stuck doing it forever. She ignored his warning and has never been happier. You can find her writing, blogging, and streaming about React, design, UI, and more at @kathryngrayson on Twitter."
+  is_mc: false
+speaker_4: &m4dz
+  speaker_in_speaker_lists: true
+  speaker_name: m4dz 🥑🦄
+  speaker_pic_filename: m4dz.png
+  speaker_role: "MASTER OF CEREMONIES - Principal Developer Advocate @ ‹div›RIOTS"
+  speaker_bio: ""
   is_mc: true
+
+speakers:
+  speaker_1: *facundo
+  speaker_2: *kathleen
+  speaker_3: *kathryn
+  speaker_4: *m4dz
 
 tracks:
   track_1: &track_1
     id: 1
     title: "Track 1"
-  track_2: &track_2
-    id: 2
-    title: "Track 2"
-  track_3: &track_3
-    id: 3
-    title: "Track 3 - fake track"
+
 
 # NB "item_type": tipi di "talk"
 #   "talk" -- un talk vero e proprio, che va anche in components/speakers e nella pagina talks_speakers
@@ -47,134 +56,67 @@ tracks:
 
 days:
   day_1:
-    date: 2020-09-16T09:00
+    date: 2021-11-30T14:00+01:00
     title: "Day 1"
     talks:
-      talk_1:
+    # service
+      opening:
         item_type: "service"
-        start_datetime: 2020-09-16T09:00
-        end_datetime: 2020-09-16T09:30
-        talk_title: "Check-in"
-      talk_2:
+#        start_datetime: 2021-11-30T09:15+01:00
+#        end_datetime: 2021-11-30T09:30+01:00
+        talk_title: "Opening by GrUSP"
+      closing:
         item_type: "service"
-        start_datetime: 2020-09-16T09:30
-        end_datetime: 2020-09-16T09:45
-        talk_title: "GrUSP presentation"
-      talk_3:
-        item_type: "keynote"
-        start_datetime: 2020-09-16T09:45
-        end_datetime: 2020-09-16T10:00
-        talk_title: "Keynote title (optional)"
-        talk_description: "Keynote description (optional)"
-        speakers:
-          speaker_1: *keynote_speaker
-      talk_4:
-        item_type: "talk"
-        track: *track_1
-        start_datetime: 2020-09-16T10:00
-        end_datetime: 2020-09-16T10:45
-        talk_title: Lorem ipsum
-        talk_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        talk_video_url:
-        speakers:
-          speaker_1: *regular_speaker
-      talk_5:
-        item_type: "talk"
-        track: *track_1
-        start_datetime: 2020-09-16T11:00
-        end_datetime: 2020-09-16T12:00
-        talk_title: Lorem ipsum
-        talk_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        talk_video_url:
-        speakers:
-          speaker_1: *regular_speaker
-      talk_6:
+#        start_datetime: 2021-11-30T18:15+01:00
+#        end_datetime: 2021-11-30T18:30+01:00
+        talk_title: "closing by GrUSP"
+      coffee-morning:
         item_type: "service"
-        start_datetime: 2020-09-16T10:45
-        end_datetime: 2020-09-16T11:00
+#        start_datetime: 2021-11-30T11:00+01:00
+#        end_datetime: 2021-11-30T11:30+01:00
         talk_title: "Coffee break"
         service_icon: "coffee"
-      talk_7:
-        item_type: "talk"
-        track: *track_2
-        start_datetime: 2020-09-16T10:00
-        end_datetime: 2020-09-16T10:45
-        talk_title: Lorem ipsum
-        talk_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        talk_video_url:
-        speakers:
-          speaker_1: *regular_speaker
-      talk_8:
-        item_type: "workshop"
-        track: *track_3
-        start_datetime: 2020-09-16T11:00
-        end_datetime: 2020-09-16T13:00
-        talk_title: "Workshop title (optional)"
-        talk_description: "Workshop description (optional) very long very long very long very long very long very long very long very long very long very long very long very long very long very long very long very long very long very long very long very long very long very long very long "
-        speakers:
-          speaker_1: *regular_speaker
-      talk_9:
+
+    # talks
+      talk1:
         item_type: "talk"
         track: *track_1
-        start_datetime: 2020-09-16T12:00
-        end_datetime: 2020-09-16T13:00
-        talk_title: "talk in second slot #1"
-        talk_description: "test per rowspan"
-        speakers:
-          speaker_1: *regular_speaker
-      talk_10:
-        item_type: "talk"
-        track: *track_2
-        start_datetime: 2020-09-16T11:00
-        end_datetime: 2020-09-16T12:00
-        talk_title: "This is a talk in track 2"
-        talk_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+#        start_datetime: 2021-11-30T09:30+01:00
+#        end_datetime: 2021-11-30T10:15+01:00
+        talk_title: "How to View and React without a Head"
+        talk_description: "You might have heard about Headless CMS. This new type of content platform gives us some benefits compared to a Monolithic CMS. We will talk about the key features of any Headless CMS and how we can integrate a headless platform into our React applications. We will focus on Storyblok, a headless CMS that offers a real-time Visual Editor, a great feature for developers and content creators."
         talk_video_url:
         speakers:
-          speaker_1: *regular_speaker
-      talk_11:
-        item_type: "service"
-        start_datetime: 2020-09-16T13:00
-        end_datetime: 2020-09-16T14:00
-        talk_title: "Lunch break"
-        service_icon: "cutlery"
-      talk_12:
+          speaker_1: *facundo
+      talk2:
         item_type: "talk"
-        track: *track_2
-        start_datetime: 2020-09-16T12:00
-        end_datetime: 2020-09-16T13:00
-        talk_title: "talk in second slot #2"
-        talk_description: "test per rowspan"
+        track: *track_1
+#        start_datetime: 2021-11-30T09:30+01:00
+#        end_datetime: 2021-11-30T10:15+01:00
+        talk_title: "Stealth-mode North Star! Rebranding in secret with feature flags"
+        talk_description: "Great products combine valuable features with strong branding to a target audience. Defining your brand's North Star is the key to delivering the standards of that promise to your customers in a compelling — and memorable way.
+          Occasionally though, your visual brand is redefined and you need to course-correct your UI to align with a new direction, while the rest of your team is meeting their own product goals. However! What if details of the rebrand are not widely shared within your organization? How do you get that rebrand in without sharing the details until it's time?
+          In this talk, we'll take a look at how you can use feature flags to roll out an updated UI in stealth mode — without impacting the work or velocity of your fellow teammates."
+        talk_video_url:
         speakers:
-          speaker_1: *regular_speaker
-
-  # day_2:
-  #   date: 2020-09-17T09:00
-  #   title: "Day 2"
-  #   talks:
-  #     talk_1:
-  #       item_type: "service"
-  #       start_datetime: 2020-09-16T09:00
-  #       end_datetime: 2020-09-16T09:30
-  #       talk_title: "Welcome Coffee"
-  #       service_icon: "coffee"
-  #     talk_2:
-  #       track: *track_1
-  #       item_type: "talk"
-  #       start_datetime: 2020-09-17T09:30
-  #       end_datetime: 2020-09-17T10:45
-  #       talk_title: "This is a talk at the beginning of the second day"
-  #       talk_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  #       talk_video_url:
-  #       speakers:
-  #         speaker_1: *regular_speaker
-  #     talk_3:
-  #       track: *track_2
-  #       item_type: "talk"
-  #       start_datetime: 2020-09-17T09:30
-  #       end_datetime: 2020-09-17T10:45
-  #       talk_title: "This is a talk in the second day, track 2"
-  #       talk_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  #       talk_video_url:
-  #       speakers:
-  #         speaker_1: *regular_speaker
+          speaker_1: *kathleen
+      talk3:
+        item_type: "talk"
+        track: *track_1
+#        start_datetime: 2021-11-30T09:30+01:00
+#        end_datetime: 2021-11-30T10:15+01:00
+        talk_title: "Configuring Storybook to Create Accessible React Components"
+        talk_description: "How to set up the popular component library management tool Storybook.JS to make the development of accessible components easier."
+        talk_video_url:
+        speakers:
+          speaker_1: *kathryn
+      # talk4:
+      #   item_type: "talk"
+      #   track: *track_1
+      #   start_datetime: 2021-11-30T09:30+01:00
+      #   end_datetime: 2021-11-30T10:15+01:00
+      #   talk_title: ""
+      #   talk_description: ""
+      #   talk_video_url:
+      #   speakers:
+      #     speaker_1: *
