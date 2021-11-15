@@ -25,7 +25,7 @@ speaker_3: &kathryn
   speaker_pic_filename: kathryn-grayson-nanz.png
   speaker_role: "Developer Advocate for KendoReact @ Progress Software"
   speaker_bio: "is a Developer Advocate at Progress with a passion for React, UI and design, and sharing with the community. She started her career as a graphic designer and was told by her Creative Director to never let anyone find out she could code because she’d be stuck doing it forever. She ignored his warning and has never been happier. You can find her writing, blogging, and streaming about React, design, UI, and more at @kathryngrayson on Twitter."
-  is_mc: false
+  speaker_twitter_url: https://twitter.com/kathryngrayson
 speaker_4: &m4dz
   speaker_in_speaker_lists: true
   speaker_name: m4dz 🥑🦄
