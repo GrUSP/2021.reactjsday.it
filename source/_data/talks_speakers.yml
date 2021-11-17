@@ -1,5 +1,5 @@
 # NB impostare a `true` per generare la pagina, a `false` per NON generarla
-generate_schedule_page: false
+generate_schedule_page: true
 schedule_under_construction_title: "Schedule under construction"
 schedule_under_construction_description: "We are still defining the schedule. Please be patient"
 
@@ -26,7 +26,15 @@ speaker_3: &kathryn
   speaker_role: "Developer Advocate for KendoReact @ Progress Software"
   speaker_bio: "is a Developer Advocate at Progress with a passion for React, UI and design, and sharing with the community. She started her career as a graphic designer and was told by her Creative Director to never let anyone find out she could code because she’d be stuck doing it forever. She ignored his warning and has never been happier. You can find her writing, blogging, and streaming about React, design, UI, and more at @kathryngrayson on Twitter."
   speaker_twitter_url: https://twitter.com/kathryngrayson
-speaker_4: &m4dz
+speaker_4: &majid
+  speaker_in_speaker_lists: true
+  speaker_name: Majid Hajian
+  speaker_pic_filename: majid-hajian.png
+  speaker_role: "Software Engineer, Google developer expert"
+  speaker_bio: "is a Google developer expert and passionate software developer with years of developing and architecting complex web and mobile applications. His passions are generally Flutter, PWA, and performance. He is an award-winning book author at Apress and instructor at PacktPub/Udemy and Pluralsight.
+    He loves sharing his knowledge with the community by writing and speaking, having workshops and video tutorials, contributing to open source, and organizing meetups and events. He is also the organizer of several big Nordic conferences and meetups such as FlutterVikings!"
+  speaker_twitter_url: https://twitter.com/mhadaily
+speaker_5: &m4dz
   speaker_in_speaker_lists: true
   speaker_name: m4dz 🥑🦄
   speaker_pic_filename: m4dz.png
@@ -38,7 +46,8 @@ speakers:
   speaker_1: *facundo
   speaker_2: *kathleen
   speaker_3: *kathryn
-  speaker_4: *m4dz
+  speaker_4: *majid
+  speaker_5: *m4dz
 
 tracks:
   track_1: &track_1
@@ -62,37 +71,48 @@ days:
     # service
       opening:
         item_type: "service"
-#        start_datetime: 2021-11-30T09:15+01:00
-#        end_datetime: 2021-11-30T09:30+01:00
+        start_datetime: 2021-11-30T14:15+01:00
+        end_datetime: 2021-11-30T14:30+01:00
         talk_title: "Opening by GrUSP"
       closing:
         item_type: "service"
-#        start_datetime: 2021-11-30T18:15+01:00
-#        end_datetime: 2021-11-30T18:30+01:00
+        start_datetime: 2021-11-30T17:30+01:00
+        end_datetime: 2021-11-30T17:45+01:00
         talk_title: "closing by GrUSP"
       coffee-morning:
         item_type: "service"
-#        start_datetime: 2021-11-30T11:00+01:00
-#        end_datetime: 2021-11-30T11:30+01:00
+        start_datetime: 2021-11-30T16:00+01:00
+        end_datetime: 2021-11-30T16:15+01:00
         talk_title: "Coffee break"
         service_icon: "coffee"
 
     # talks
-      talk1:
+      flutter-for-react:
         item_type: "talk"
         track: *track_1
-#        start_datetime: 2021-11-30T09:30+01:00
-#        end_datetime: 2021-11-30T10:15+01:00
+        start_datetime: 2021-11-30T14:30+01:00
+        end_datetime: 2021-11-30T15:15+01:00
+        talk_title: "Flutter for React and React Native developers"
+        talk_description: "After working quite a long time in tech, especially as an architect, I understood that it's not good to be tied to a single framework for a long-time. You might have heard about the technical breadth term! If not, it means you should know what you don't know. It helps you broaden your knowledge, sharpen your skills, and ultimately make a better decision or even have a better career or life.
+          In this session, I will onboard you to Flutter and its ecosystem, where you can start developing the next application right away. You'll learn Flutter based on what you already know. If you have been a React or RN developer, this talk will facilitate and speed up your learning process and help you add another skill to your resume."
+        talk_video_url:
+        speakers:
+          speaker_1: *majid
+      headless-CMS:
+        item_type: "talk"
+        track: *track_1
+        start_datetime: 2021-11-30T15:15+01:00
+        end_datetime: 2021-11-30T16:00+01:00
         talk_title: "How to View and React without a Head"
         talk_description: "You might have heard about Headless CMS. This new type of content platform gives us some benefits compared to a Monolithic CMS. We will talk about the key features of any Headless CMS and how we can integrate a headless platform into our React applications. We will focus on Storyblok, a headless CMS that offers a real-time Visual Editor, a great feature for developers and content creators."
         talk_video_url:
         speakers:
           speaker_1: *facundo
-      talk2:
+      feature-flags:
         item_type: "talk"
         track: *track_1
-#        start_datetime: 2021-11-30T09:30+01:00
-#        end_datetime: 2021-11-30T10:15+01:00
+        start_datetime: 2021-11-30T16:15+01:00
+        end_datetime: 2021-11-30T16:45+01:00
         talk_title: "Stealth-mode North Star! Rebranding in secret with feature flags"
         talk_description: "Great products combine valuable features with strong branding to a target audience. Defining your brand's North Star is the key to delivering the standards of that promise to your customers in a compelling — and memorable way.
           Occasionally though, your visual brand is redefined and you need to course-correct your UI to align with a new direction, while the rest of your team is meeting their own product goals. However! What if details of the rebrand are not widely shared within your organization? How do you get that rebrand in without sharing the details until it's time?
@@ -100,16 +120,18 @@ days:
         talk_video_url:
         speakers:
           speaker_1: *kathleen
-      talk3:
+      accessible-storybook:
         item_type: "talk"
         track: *track_1
-#        start_datetime: 2021-11-30T09:30+01:00
-#        end_datetime: 2021-11-30T10:15+01:00
+        start_datetime: 2021-11-30T16:45+01:00
+        end_datetime: 2021-11-30T17:30+01:00
         talk_title: "Configuring Storybook to Create Accessible React Components"
         talk_description: "How to set up the popular component library management tool Storybook.JS to make the development of accessible components easier."
         talk_video_url:
         speakers:
           speaker_1: *kathryn
+
+
       # talk4:
       #   item_type: "talk"
       #   track: *track_1
