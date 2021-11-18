@@ -87,27 +87,27 @@ days:
         service_icon: "coffee"
 
     # talks
-      flutter-for-react:
+      headless-CMS:
         item_type: "talk"
         track: *track_1
         start_datetime: 2021-11-30T14:30+01:00
         end_datetime: 2021-11-30T15:15+01:00
+        talk_title: "How to View and React without a Head"
+        talk_description: "You might have heard about Headless CMS. This new type of content platform gives us some benefits compared to a Monolithic CMS. We will talk about the key features of any Headless CMS and how we can integrate a headless platform into our React applications. We will focus on Storyblok, a headless CMS that offers a real-time Visual Editor, a great feature for developers and content creators."
+        talk_video_url:
+        speakers:
+          speaker_1: *facundo
+      flutter-for-react:
+        item_type: "talk"
+        track: *track_1
+        start_datetime: 2021-11-30T15:15+01:00
+        end_datetime: 2021-11-30T16:00+01:00
         talk_title: "Flutter for React and React Native developers"
         talk_description: "After working quite a long time in tech, especially as an architect, I understood that it's not good to be tied to a single framework for a long-time. You might have heard about the technical breadth term! If not, it means you should know what you don't know. It helps you broaden your knowledge, sharpen your skills, and ultimately make a better decision or even have a better career or life.
           In this session, I will onboard you to Flutter and its ecosystem, where you can start developing the next application right away. You'll learn Flutter based on what you already know. If you have been a React or RN developer, this talk will facilitate and speed up your learning process and help you add another skill to your resume."
         talk_video_url:
         speakers:
           speaker_1: *majid
-      headless-CMS:
-        item_type: "talk"
-        track: *track_1
-        start_datetime: 2021-11-30T15:15+01:00
-        end_datetime: 2021-11-30T16:00+01:00
-        talk_title: "How to View and React without a Head"
-        talk_description: "You might have heard about Headless CMS. This new type of content platform gives us some benefits compared to a Monolithic CMS. We will talk about the key features of any Headless CMS and how we can integrate a headless platform into our React applications. We will focus on Storyblok, a headless CMS that offers a real-time Visual Editor, a great feature for developers and content creators."
-        talk_video_url:
-        speakers:
-          speaker_1: *facundo
       feature-flags:
         item_type: "talk"
         track: *track_1
